@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Transitions</title>
+  <style>
+    body {
+      background: green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .box {
+      background: red;
+      width: 100px;
+      height: 100px;
+      /*  transition-property: background;
+      transition-duration: 2s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 3s;*/
+      transition: all 2s ease-in-out;
+      transform: rotate(25deg);
+
+
+    }
+
+    .box:hover {
+      background: red;
+      border-radius: 50%;
+      height: 450px;
+      width: 450px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>
